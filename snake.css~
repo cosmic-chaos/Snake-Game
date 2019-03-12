@@ -1,0 +1,42 @@
+canvas {
+	border:1px solid black;
+}
+
+.gameField {
+	text-align:center;
+	margin:30px;
+}
+
+.buttons {
+	background-color:#ddd;
+	text-align:center;
+}
+
+.title {
+	background-color:#ddd;
+	text-align:center;
+}
+
+h1 {
+	text-align:center;
+}
+
+h4 {
+	text-align:center;
+}
+
+.middle {
+	text-align:center;
+}
+
+.indent-form {
+	margin-left:10px;
+}
+
+li {
+	padding:5px;
+}
+
+.check {
+	color:red;
+}

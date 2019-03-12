@@ -1,0 +1,33 @@
+if(!this.myDamage) {
+	this.myDamage= 0;
+}
+
+if(!this.scanAngle) {
+	this.scanAngle = 0;
+}
+
+if(!this.driveAngle) {
+	this.driveAngle= 90;
+}
+
+this.drive(this.driveAngle,50);
+var range = this.scan(this.scanAngle,10);
+
+if (range){
+	this.cannon(this.scanAngle,range);
+} else {
+	this.drive(this.driveAngle,0);
+	this.scanAngle+=10;
+}
+log('y= '+this.loc_y()+', x= '+this.loc_x());
+if(this.loc_x() == 495 || this.loc_x() == 5 || this.loc_y() == 495 || this.loc_y() == 5){
+	this.driveAngle -= 180;
+	this.drive(this.driveAngle,50);
+}
+
+//if(this.damage()-this.myDamage != 0){
+//	log('my damage= '+this.myDamage+', damage= //'+this.damage());
+//	this.driveAngle -= 180;
+//	this.myDamage = this.damage();
+//	this.drive(this.driveAngle,50);
+//}

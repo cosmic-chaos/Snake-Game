@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="continue.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="snake.css" />
+</head>
+
+<body onload = "showEatenFood(foodEaten); canvasSize()">
+<h1>Snake Game</h1>
+
+<div class="buttons">
+<button onClick="check()">Start</button>
+<button onClick="end()">End</button>
+<button onClick="pauseGame()">Pause</button>
+<button onClick="resumeGame()">Resume</button>
+</div>
+
+<p class="middle" id="snake"></p>
+<p class="middle" id="best"></p>
+
+<div class="gameField">
+<canvas id="gameField">
+</canvas>
+</div>
+
+
+</body>
+
+</html>

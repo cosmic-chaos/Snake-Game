@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="level.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="snake.css" />
+</head>
+
+<body onload = "level(run)">
+<h1>Snake Game</h1>
+
+<div class="buttons">
+<button onClick="check()">Start</button>
+<button onClick="almostEnd()">End</button>
+<button onClick="pauseGame()">Pause</button>
+<button onClick="resumeGame()">Resume</button>
+</div>
+<p class="middle" id="level"> </p>
+<p class="middle" id="best"></p>
+<div class="gameField">
+<canvas id="gameField" width="500" height="500">
+</canvas>
+</div>
+
+
+</body>
+
+</html>

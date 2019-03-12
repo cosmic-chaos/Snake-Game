@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="snake.css" />
+</head>
+
+<h1>Snake Game</h1>
+
+<div class="title">
+<h3> Choose the Game Type </h3>
+</div>
+<div id='gameType'>
+<input type="radio" name="type" id="continue" checked='true'>Continuous<br>
+<input type="radio" name="type" id="limit">Limited<br>
+</div>
+
+<div class="title">
+<h3> Choose the Speed</h3>
+</div>
+<p id='speedError' class="check"></p>
+<select id="speed">
+  <option></option>
+  <option>Really Slow</option>
+  <option>Slow</option>  
+  <option>Average</option>
+  <option>Fast</option>
+  <option>Really Fast</option>
+</select>
+<br><br>
+
+<div class="title">
+<h3> Choose the Number of Food</h3>
+</div>
+<p id='foodError' class="check"></p>
+<input type="text" id="food"/>
+<br><br>
+
+<div class="title">
+<h3> Choose the Field Width</h3>
+</div>
+<p id='widthError' class="check"></p>
+<select id="fWidth">
+  <option></option>
+  <option>Really Small</option>
+  <option>Small</option>  
+  <option>Average</option>
+  <option>Big</option>
+  <option>Really Big</option>
+</select><br><br>
+
+<div class="title">
+<h3> Choose the Field height</h3>
+</div>
+<p id='heightError' class="check"></p>
+<select id="fHeight">
+  <option></option>
+  <option>Really Small</option>
+  <option>Small</option>  
+  <option>Average</option>
+  <option>Big</option>
+  <option>Really Big</option>
+</select><br><br>
+
+<div class="title">
+<h3> Extra</h3>
+</div>
+<form>
+	<input type="checkbox" id="obstacles">Obstacles<br>
+	<span class="indent-form" ><font id='blockError' color='black'>Amount: </font></span>
+	<input type="text" id="blockAmount"/><br>
+	<input type="checkbox" id="enemy">Enemies<br>
+	<span class="indent-form" ><font id='enemyError' color='black'>Amount: </font></span>
+	<select  id="enemyAmount">
+	  <option></option>
+	  <option>1</option>
+	  <option>2</option>  
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select><br>
+	<span class="indent-form" ><font id='espeedError' color='black'>Speed: </font></span>
+	<select style="margin-top:5px;" id="speedE">
+	  <option></option>
+	  <option>Really Slow</option>
+	  <option>Slow</option>  
+	  <option>Average</option>
+	  <option>Fast</option>
+	  <option>Really Fast</option>
+	</select><br></form>
+
+<div class="buttons">
+<button onClick="choose()">Start Game</button>
+</div>
+
+</body>
+
+</html>
